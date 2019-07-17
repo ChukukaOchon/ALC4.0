@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyProfile">
+
+    <ImageView
+        android:id="@+id/image_profile"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/image_profile_string"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/chukukapapercam" />
+
+    <TextView
+        android:id="@+id/text_profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/fira_sans_light"
+        android:text="@string/text_profile_name_string"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_profile" />
+
+    <View
+        android:id="@+id/divider_profile"
+        android:layout_width="379dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/colorAccent"
+        app:layout_constraintEnd_toEndOf="@+id/image_profile"
+        app:layout_constraintStart_toStartOf="@+id/image_profile"
+        app:layout_constraintTop_toBottomOf="@+id/text_profile_name" />
+
+    <TableLayout
+        android:id="@+id/table_profile_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/divider_profile"
+        app:layout_constraintStart_toStartOf="@+id/divider_profile"
+        app:layout_constraintTop_toBottomOf="@+id/divider_profile">
+
+        <TableRow
+            android:id="@+id/table_row_track"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+id/textView_data_track"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="170dp"
+                android:padding="10dp"
+                android:text="@string/data_track"
+                android:textAlignment="textEnd"
+                android:textColor="@color/colorAccentDarker"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView_data_track_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="180dp"
+                android:padding="10dp"
+                android:text="@string/data_track_value"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorAccentDark"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/table_row_country"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+id/textView_data_country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="170dp"
+                android:padding="10dp"
+                android:text="@string/data_country"
+                android:textAlignment="textEnd"
+                android:textColor="@color/colorAccentDarker"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView_data_country_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="180dp"
+                android:padding="10dp"
+                android:text="@string/data_country_value"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorAccentDark"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/table_row_email"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+id/textView_data_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="170dp"
+                android:padding="10dp"
+                android:text="@string/data_email"
+                android:textAlignment="textEnd"
+                android:textColor="@color/colorAccentDarker"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView_data_email_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="180dp"
+                android:padding="10dp"
+                android:text="@string/data_email_value"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorAccentDark"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/table_row_phone"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+id/textView_data_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="170dp"
+                android:padding="10dp"
+                android:text="@string/data_phone"
+                android:textAlignment="textEnd"
+                android:textColor="@color/colorAccentDarker"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView_data_phone_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="180dp"
+                android:padding="10dp"
+                android:text="@string/data_phone_value"
+                android:textColor="@color/colorAccentDark"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/table_row_slack"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+id/textView_data_slack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="170dp"
+                android:padding="10dp"
+                android:text="@string/data_slack"
+                android:textAlignment="textEnd"
+                android:textColor="@color/colorAccentDarker"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView_data_slack_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="180dp"
+                android:padding="10dp"
+                android:text="@string/data_slack_value"
+                android:textColor="@color/colorAccentDark"
+                android:textSize="18sp" />
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">challenge</string>
+    <string name="main_screen_title">ALC 4.0: phase 1</string>
+    <string name="text_welcome_string">Welcome to ALC 4.0</string>
+    <string name="button_alc_string">About ALC</string>
+    <string name="button_profile_string">My Profile</string>
+    <string name="image_profile_string">my profile image</string>
+    <string name="text_profile_name_string">Chukuka</string>
+    <string name="data_track">Track:</string>
+    <string name="data_track_value">Android</string>
+    <string name="data_country">Country:</string>
+    <string name="data_country_value">Nigeria</string>
+    <string name="data_email">Email:</string>
+    <string name="data_email_value">ooch@yahoo.com</string>
+    <string name="data_phone">Phone number:</string>
+    <string name="data_phone_value">09099654321</string>
+    <string name="data_slack">Slack:</string>
+    <string name="data_slack_value">\@chukuka</string>
+</resources>
